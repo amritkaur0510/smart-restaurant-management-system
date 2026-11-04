@@ -5,8 +5,8 @@ function Navbar(){
         <div className="myNavBar">
             <Link to="/">Home</Link>
             <Link to="/menu">Menu</Link>
-            <Link to="/addToCart">Cart</Link>
-            <Link to="/reservations"></Link>
+            <Link to="/cart">Cart</Link>
+            <Link to="/reservations">Reservation</Link>
         </div>
         </>
     )
