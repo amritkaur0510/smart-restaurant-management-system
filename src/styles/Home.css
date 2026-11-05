@@ -1,0 +1,108 @@
+/* Hero Section */
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 36rem;
+    padding: 4rem 7%;
+
+    background:
+        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.65), transparent 30%),
+        linear-gradient(115deg, #FFFAF4 0%, #F6E9E8 52%, #F2DCCB 100%);
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Hero Content */
+.heroContent {
+    flex: 1;
+    max-width: 35rem;
+}
+
+.heroContent h1 {
+    color: #29231F;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.heroContent p {
+    color: #75685E;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+
+/* Hero Buttons */
+.heroButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.heroButtons a {
+    text-decoration: none;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.primaryButton {
+    background-color: #D77D38;
+    color: white;
+}
+
+.primaryButton:hover {
+    background-color: #BD692B;
+}
+
+.secondaryButton {
+    border: 1px solid #D77D38;
+    color: #A65D29;
+}
+
+/* Hero Image */
+.heroImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage img {
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 1rem 1.5rem rgba(70, 45, 30, 0.12));
+}
+
+/* Responsive Layout */
+@media (max-width: 48rem) {
+    .heroSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 6%;
+    }
+
+    .heroContent p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroButtons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heroImage img {
+        max-width: 24rem;
+    }
+}
