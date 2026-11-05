@@ -1,17 +1,96 @@
+
+/* Main Navbar */
 .myNavBar {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 1.25rem 6%;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e4e7;
+    box-sizing: border-box;
 }
 
-.myNavBar a {
-  text-decoration: none;
-  color: #252525;
-  font-size: 15px;
-  font-weight: 500;
-  transition: color 0.2s ease;
+/* Company Name */
+.brand {
+    flex-shrink: 0;
 }
 
-.myNavBar a:hover {
-  color: #e88b45;
+.brand a {
+    text-decoration: none;
+    color: #252525;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Navigation Links */
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #77736e;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 1%;
+
+    transition: color 0.2s ease;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+    color: #d77d38;
+}
+
+/* Navbar Icons */
+.navIcons {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+.navIcons a {
+    color: #252525;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navIcons a:hover {
+    color: #d77d38;
+}
+
+/* Tablet */
+@media (max-width: 64rem) {
+    .myNavBar {
+        padding: 1rem 4%;
+    }
+
+    .navLinks {
+        gap: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 48rem) {
+    .myNavBar {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .navLinks {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
