@@ -1,0 +1,88 @@
+.popularDishes {
+    padding: 4rem 7%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.popularDishes h2 {
+    font-size: 2rem;
+    color: #29231F;
+    margin-bottom: 2rem;
+}
+
+.categoryButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.categoryButtons button {
+    padding: 0.7rem 1.3rem;
+    border: 1px solid #D77D38;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #A65D29;
+    cursor: pointer;
+}
+
+.categoryButtons button:hover {
+    background-color: #D77D38;
+    color: white;
+}
+
+.dishContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+.dishCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding: 2rem;
+    border: 1px solid #e5e4e7;
+    border-radius: 0.75rem;
+    text-align: left;
+}
+
+.dishCard h3 {
+    color: #29231F;
+    margin-bottom: 0.75rem;
+}
+
+.dishCard p {
+    color: #75685E;
+    line-height: 1.6;
+}
+
+.dishCard span {
+    display: block;
+    margin-top: 1rem;
+    color: #D77D38;
+    font-weight: 700;
+}
+
+.viewMenuButton {
+    margin-top: 2.5rem;
+}
+
+.viewMenuButton a {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    background-color: #D77D38;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.viewMenuButton a:hover {
+    background-color: #BD692B;
+}
