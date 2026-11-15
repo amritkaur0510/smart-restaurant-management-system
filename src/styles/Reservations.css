@@ -1,0 +1,625 @@
+
+/* RESERVATIONS PAGE */
+
+.reservationPage {
+    background: #F8F6F1;
+    padding: 55px 7%;
+    color: #292824;
+    min-height: 100vh;
+}
+
+/* Page Heading */
+
+.reservationHeader {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.reservationSubtitle {
+    color: #A8754E;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.reservationHeader h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.reservationHeader > p:last-child {
+    color: #827B72;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Main Layout */
+
+.reservationLayout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 35px;
+    max-width: 1250px;
+    margin: auto;
+    align-items: stretch;
+}
+
+/* Reservation Form */
+
+.reservationFormSection {
+    background: #FFFEFA;
+    padding: 38px;
+    border-radius: 12px;
+    border: 1px solid #EAE5DC;
+}
+
+.reservationSectionHeading {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.reservationSectionHeading > span {
+    color: #A8754E;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+.reservationSectionHeading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.reservationSectionHeading p {
+    color: #827B72;
+    font-size: 12px;
+    margin: 0;
+}
+
+.bookingDetailsHeading {
+    margin-top: 35px;
+}
+
+/* Form Inputs */
+
+.reservationInputRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.reservationInputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+    min-width: 0;
+}
+
+.reservationInputGroup label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #403C35;
+}
+
+.reservationInputGroup label span {
+    color: #999187;
+    font-weight: 400;
+}
+
+.reservationInputGroup input,
+.reservationInputGroup select,
+.reservationInputGroup textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #E5DED3;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #292824;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.reservationInputGroup input:focus,
+.reservationInputGroup select:focus,
+.reservationInputGroup textarea:focus {
+    border-color: #A8754E;
+}
+
+.reservationInputGroup input::placeholder,
+.reservationInputGroup textarea::placeholder {
+    color: #AAA49B;
+}
+
+.reservationInputGroup textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+/* Reserve Button */
+
+.reserveButton {
+    width: 100%;
+    padding: 15px 20px;
+    background: #A8754E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background 0.25s ease;
+}
+
+.reserveButton:hover {
+    background: #825638;
+}
+
+.reserveButton i {
+    font-size: 15px;
+}
+
+/* Restaurant Image */
+
+.reservationVisual {
+    position: relative;
+    min-height: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #292824;
+}
+
+.reservationVisual > img {
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.78;
+}
+
+.reservationVisual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.05) 25%,
+        rgba(0, 0, 0, 0.78) 100%
+    );
+    pointer-events: none;
+}
+
+.reservationVisualContent {
+    position: absolute;
+    left: 35px;
+    bottom: 190px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.reservationVisualContent p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.reservationVisualContent h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+/* Contact Details */
+
+.reservationContact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 25px 30px;
+    background: rgba(35, 32, 27, 0.88);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.reservationContact > div {
+    color: #FFFFFF;
+}
+
+.reservationContact i {
+    color: #D0A47E;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reservationContact span {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.reservationContact p {
+    font-size: 10px;
+    color: #D2CCC3;
+    margin: 4px 0;
+}
+
+/* RESERVATION RECEIPT */
+
+.reservationReceipt {
+    margin-top: 25px;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1px solid #E5DED3;
+    border-radius: 10px;
+    animation: receiptAppear 0.35s ease;
+}
+
+@keyframes receiptAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.receiptHeader {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #D8CFC3;
+}
+
+.receiptHeader > i {
+    font-size: 35px;
+    color: #628568;
+}
+
+.receiptHeader h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin: 12px 0 7px;
+}
+
+.receiptHeader p {
+    font-size: 12px;
+    color: #827B72;
+    margin: 0;
+}
+
+.receiptReference {
+    background: #F8F6F1;
+    text-align: center;
+    padding: 15px;
+    margin: 18px 0;
+    border-radius: 6px;
+}
+
+.receiptReference span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #827B72;
+    margin-bottom: 7px;
+}
+
+.receiptReference strong {
+    font-size: 14px;
+    color: #A8754E;
+    word-break: break-all;
+}
+
+.receiptDetails h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.receiptRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 11px 0;
+    border-bottom: 1px solid #F0ECE5;
+    font-size: 11px;
+}
+
+.receiptRow span {
+    color: #827B72;
+    flex-shrink: 0;
+}
+
+.receiptRow strong {
+    color: #292824;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.receiptFooter {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-top: 18px;
+    padding: 12px;
+    background: #F8F6F1;
+    border-radius: 6px;
+    color: #827B72;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.receiptFooter i {
+    color: #A8754E;
+    font-size: 14px;
+}
+
+/* MY RESERVATIONS */
+
+.myReservations {
+    max-width: 1250px;
+    margin: 75px auto 20px;
+}
+
+.myReservationsHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.myReservationsHeading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.myReservationsHeading > div > p:last-child {
+    color: #827B72;
+    font-size: 13px;
+    margin: 0;
+}
+
+.reservationCount {
+    background: #EEE5D9;
+    color: #825638;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Empty State */
+
+.emptyReservations {
+    background: #FFFEFA;
+    border: 1px solid #EAE5DC;
+    border-radius: 10px;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.emptyReservations i {
+    font-size: 35px;
+    color: #A8754E;
+}
+
+.emptyReservations h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    margin: 15px 0 8px;
+}
+
+.emptyReservations p {
+    color: #827B72;
+    font-size: 12px;
+}
+
+/* Reservation Cards */
+
+.reservationList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservationCard {
+    background: #FFFEFA;
+    border: 1px solid #EAE5DC;
+    border-radius: 10px;
+    padding: 22px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr auto;
+    align-items: center;
+    gap: 25px;
+}
+
+.reservationCardDate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #825638;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reservationCardDate i {
+    font-size: 19px;
+}
+
+.reservationCardInfo h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.reservationCardInfo p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #827B72;
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+.reservationCardInfo i {
+    color: #A8754E;
+}
+
+.reservationCardActions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.reservationStatus {
+    background: #EAF2E9;
+    color: #47734F;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.cancelReservationButton {
+    background: transparent;
+    border: 1px solid #D8C7B8;
+    color: #936044;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cancelReservationButton:hover {
+    background: #A8754E;
+    color: #FFFFFF;
+    border-color: #A8754E;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .reservationPage {
+        padding: 45px 4%;
+    }
+
+    .reservationLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .reservationVisual {
+        min-height: 500px;
+    }
+
+    .reservationVisual > img {
+        min-height: 500px;
+    }
+
+    .reservationVisualContent {
+        bottom: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .reservationPage {
+        padding: 35px 5%;
+    }
+
+    .reservationHeader h1 {
+        font-size: 32px;
+    }
+
+    .reservationFormSection {
+        padding: 23px 18px;
+    }
+
+    .reservationInputRow {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .reservationVisual {
+        min-height: 430px;
+    }
+
+    .reservationVisual > img {
+        min-height: 430px;
+    }
+
+    .reservationVisualContent {
+        left: 22px;
+        bottom: 185px;
+    }
+
+    .reservationVisualContent h2 {
+        font-size: 30px;
+    }
+
+    .reservationContact {
+        padding: 20px 17px;
+        gap: 12px;
+    }
+
+    .myReservationsHeading {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .myReservationsHeading h2 {
+        font-size: 25px;
+    }
+
+    .reservationCount {
+        white-space: nowrap;
+    }
+
+    .reservationCard {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .reservationCardActions {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reservationReceipt {
+        padding: 18px;
+    }
+
+    .receiptHeader h2 {
+        font-size: 21px;
+    }
+}
