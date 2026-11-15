@@ -11,7 +11,7 @@ function Navbar() {
         <nav className={`myNavBar ${isHome ? "homeNavBar" : ""}`}>
 
             <div className="brand">
-                <NavLink to="/">Your Restaurant</NavLink>
+                <NavLink to="/">Birch - Beyond Ordinary</NavLink>
             </div>
 
             <div className="navLinks">
