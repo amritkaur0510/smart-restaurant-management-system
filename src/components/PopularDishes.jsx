@@ -9,6 +9,7 @@ import burgerImage from "../assets/Classic Cheeseburger PNG Cutout.png";
 import pizzaImage from "../assets/Margherita Pizza with Fresh Basil and Tomatoes.png";
 import pastaImage from "../assets/Spicy Basil Penne Arrabbiata.png";
 import cheesecakeImage from "../assets/Berry-Glazed Cheesecake Delight.png";
+import mangoShakeImage from "../assets/Fresh Mango Smoothie with Mint.png"
 
 
 function PopularDishes() {
@@ -29,7 +30,7 @@ function PopularDishes() {
     13: pizzaImage,
     15: pastaImage,
     17: cheesecakeImage,
-    21: pizzaImage
+    21: mangoShakeImage
 };
 
     return (
