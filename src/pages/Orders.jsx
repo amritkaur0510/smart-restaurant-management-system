@@ -1,10 +1,3 @@
-function Orders(){
-    return(
-        <>
-        
-        </>
-    )
-
 import { useState } from "react";
 import ordersData from "../data/OrderData";
 import menuData from "../data/MenuData";
