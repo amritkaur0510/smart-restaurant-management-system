@@ -2,6 +2,7 @@
 import "../styles/Home.css";
 import heroImage from "../assets/Hero_Image.png";
 import PopularDishes from "../components/PopularDishes";
+import { Link } from "react-router";
 
 function Home() {
     return (
@@ -38,13 +39,13 @@ function Home() {
                     </p>
 
                     <div className="heroButtons">
-                        <a href="/menu" className="primaryButton">
+                        <Link to="/menu" className="primaryButton">
                             Explore the Menu
-                        </a>
+                        </Link>
 
-                        <a href="/reservations" className="secondaryButton">
+                        <Link to="/reservation" className="secondaryButton">
                             Reserve a Table
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
