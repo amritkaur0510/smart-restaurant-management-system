@@ -1,25 +1,26 @@
+
 import "../styles/Navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 
 function Navbar() {
-    return (
-        <nav className="myNavBar">
+    const location = useLocation();
+    const isHome = location.pathname === "/";
 
-            {/* Company Name */}
+    return (
+        <nav className={`myNavBar ${isHome ? "homeNavBar" : ""}`}>
+
             <div className="brand">
                 <NavLink to="/">Your Restaurant</NavLink>
             </div>
 
-            {/* Navigation Links */}
             <div className="navLinks">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/menu">Menu</NavLink>
                 <NavLink to="/orders">Orders</NavLink>
-                <NavLink to="/reservations">Reservations</NavLink>
+                <NavLink to="/reservation">Reservations</NavLink>
             </div>
 
-            {/* Cart and Profile Icons */}
             <div className="navIcons">
                 <NavLink to="/cart" aria-label="Shopping cart">
                     <i className="bi bi-cart3"></i>
