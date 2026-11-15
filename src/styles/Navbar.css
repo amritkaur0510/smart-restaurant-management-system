@@ -1,96 +1,181 @@
+/* MAIN NAVBAR*/
 
-/* Main Navbar */
 .myNavBar {
+    position: relative;
+    z-index: 100;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     width: 100%;
-    padding: 1.25rem 6%;
+    max-width: 100%;
+    padding: 1.3rem 7%;
 
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e4e7;
-    box-sizing: border-box;
+    background: #FFFEFA;
+    border-bottom: 1px solid #E8E2D9;
 }
 
-/* Company Name */
+
+/* Transparent Navbar on Home */
+
+.myNavBar.homeNavBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+/*  BRAND */
+
 .brand {
     flex-shrink: 0;
 }
 
 .brand a {
+    color: #292824;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.55rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-decoration: none;
-    color: #252525;
-
-    font-size: 1.5rem;
-    font-weight: 700;
+    white-space: nowrap;
 }
 
-/* Navigation Links */
+.homeNavBar .brand a {
+    color: #FFF9EF;
+}
+
+
+/* NAVIGATION LINKS*/
+
 .navLinks {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .navLinks a {
+    color: #77736E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+
     text-decoration: none;
-    color: #77736e;
-
-    font-size: 1.1rem;
-    font-weight: 500;
+    text-transform: uppercase;
     white-space: nowrap;
-    padding: 1%;
 
-    transition: color 0.2s ease;
+    transition: color 0.25s ease;
 }
 
 .navLinks a:hover,
 .navLinks a.active {
-    color: #d77d38;
+    color: #A8754E;
 }
 
-/* Navbar Icons */
+
+/* Home Navigation Link Colours */
+
+.homeNavBar .navLinks a {
+    color: rgba(255, 249, 239, 0.85);
+}
+
+.homeNavBar .navLinks a:hover,
+.homeNavBar .navLinks a.active {
+    color: #D9AD6B;
+}
+
+
+/* NAVBAR ICONS*/
+
 .navIcons {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.3rem;
     flex-shrink: 0;
 }
 
 .navIcons a {
-    color: #252525;
-    font-size: 1.3rem;
+    color: #292824;
+    font-size: 1.15rem;
     text-decoration: none;
-    transition: color 0.2s ease;
+
+    transition: color 0.25s ease;
 }
 
 .navIcons a:hover {
-    color: #d77d38;
+    color: #A8754E;
 }
 
-/* Tablet */
+.homeNavBar .navIcons a {
+    color: #FFF9EF;
+}
+
+.homeNavBar .navIcons a:hover {
+    color: #D9AD6B;
+}
+
+
+/* TABLET*/
+
 @media (max-width: 64rem) {
+
     .myNavBar {
-        padding: 1rem 4%;
+        padding: 1.2rem 4%;
     }
 
     .navLinks {
-        gap: 1rem;
+        gap: 1.1rem;
     }
+
+    .navLinks a {
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+    }
+
+    .brand a {
+        font-size: 1.35rem;
+    }
+
 }
 
-/* Mobile */
+
+/*MOBILE */
+
 @media (max-width: 48rem) {
+
     .myNavBar {
         flex-wrap: wrap;
-        gap: 1.25rem;
+        gap: 1rem;
+        padding: 1rem 5%;
     }
 
     .navLinks {
         order: 3;
+
+        display: flex;
         width: 100%;
+
         justify-content: center;
         flex-wrap: wrap;
+        gap: 0.8rem 1.2rem;
     }
+
+    .navLinks a {
+        font-size: 0.63rem;
+        letter-spacing: 0.8px;
+    }
+
+    .brand a {
+        font-size: 1.3rem;
+    }
+
+    .navIcons {
+        gap: 1rem;
+    }
+
 }
