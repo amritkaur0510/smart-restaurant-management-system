@@ -1,7 +1,7 @@
 import { useState } from "react";
 import menuData from "../data/MenuData";
 
-import { useCart } from "../context/useCart";
+import { useCart } from "../context/UseCart";
 import "../styles/Menu.css";
 
 function Menu() {

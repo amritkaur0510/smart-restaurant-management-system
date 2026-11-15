@@ -1,4 +1,4 @@
-import { useCart } from "../context/useCart";
+import { useCart } from "../context/UseCart";
 import MenuData from "../data/MenuData";
 import "../styles/PopularDishes.css";
 import { Link } from "react-router";

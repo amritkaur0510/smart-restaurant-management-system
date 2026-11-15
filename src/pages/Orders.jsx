@@ -3,7 +3,7 @@ import ordersData from "../data/OrderData";
 import menuData from "../data/MenuData";
 
 import "../styles/Order.css"
-import { useCart } from "../context/useCart";
+import { useCart } from "../context/UseCart";
 
 
 function Orders() {
