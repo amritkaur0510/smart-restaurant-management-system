@@ -1,9 +1,3 @@
-function Cart(){
-    return(
-        <>
-        
-        </>
-    )
 import { Link } from "react-router";
 import { useCart } from "../context/useCart";
 import "../styles/Cart.css";
