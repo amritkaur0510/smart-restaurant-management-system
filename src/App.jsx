@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/smart-restaurant-management-system">
         <Navbar />
 
         <Routes>
