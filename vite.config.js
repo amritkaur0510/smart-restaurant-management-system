@@ -3,5 +3,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/YOUR-REPOSITORY-NAME/',
+  base: '/smart-restaurant-management-system/',
 })
