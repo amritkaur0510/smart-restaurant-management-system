@@ -190,7 +190,7 @@ function Cart() {
             </section>
 
         </main>
-    );
+    )
 }
 
-export default Cart;
+export default Cart
