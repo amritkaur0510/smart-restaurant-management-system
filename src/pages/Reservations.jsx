@@ -437,7 +437,7 @@ function Reservations() {
             </section>
 
         </div>
-    );
+    )
 }
 
-export default Reservations;
+export default Reservations
