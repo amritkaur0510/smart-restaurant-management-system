@@ -1,10 +1,3 @@
-function Reservation(){
-    return(
-        <>
-        
-        </>
-    )
-
 import { useState } from "react";
 import reservationImage from "../assets/reservation.jpeg";
 import "../styles/Reservations.css";
