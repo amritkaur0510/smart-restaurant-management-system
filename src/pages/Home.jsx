@@ -1,48 +1,66 @@
+
 import "../styles/Home.css";
-import heroImage from "../assets/Hero_Image.png"
-import PopularDishes from "../components/popularDishes";
+import heroImage from "../assets/Hero_Image.png";
+import PopularDishes from "../components/PopularDishes";
 
 function Home() {
     return (
         <main>
-
-            {/* Hero Section */}
-            <section className="heroSection">
-
-                {/* Hero Content */}
+            <section
+                className="heroSection"
+                style={{
+                    backgroundImage: `
+                        linear-gradient(
+                            90deg,
+                            rgba(20, 15, 12, 0.88) 0%,
+                            rgba(20, 15, 12, 0.58) 48%,
+                            rgba(20, 15, 12, 0.25) 100%
+                        ),
+                        url(${heroImage})
+                    `
+                }}
+            >
                 <div className="heroContent">
-                    <h1>Discover the Taste of Something Special</h1>
+                    <span className="heroEyebrow">
+                        FRESH INGREDIENTS · THOUGHTFULLY PREPARED
+                    </span>
+
+                    <h1>
+                        A little taste
+                        <br />
+                        of <em>something special.</em>
+                    </h1>
 
                     <p>
-                        Enjoy delicious food made with fresh ingredients
-                        and a passion for great flavours. Every meal is
-                        an experience worth sharing.
+                        Discover thoughtfully prepared dishes, fresh
+                        ingredients and flavours worth coming back for.
+                        Make every meal a moment to enjoy.
                     </p>
 
                     <div className="heroButtons">
                         <a href="/menu" className="primaryButton">
-                            Explore Menu
+                            Explore the Menu
                         </a>
 
                         <a href="/reservations" className="secondaryButton">
-                            Book a Table
+                            Reserve a Table
                         </a>
                     </div>
                 </div>
 
-                {/* Hero Image */}
-                <div className="heroImage">
-                    <img
-                        src={heroImage}
-                        alt="Delicious restaurant dish"
-                    />
+                <div className="heroSideNote">
+                    GOOD FOOD. GOOD COMPANY.
                 </div>
 
+                <div className="heroScroll">
+                    <span></span>
+                    SCROLL TO DISCOVER
+                </div>
             </section>
-            <PopularDishes/>
 
+            <PopularDishes />
         </main>
     );
 }
 
-export default Home
+export default Home;
