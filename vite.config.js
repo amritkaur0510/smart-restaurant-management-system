@@ -1,7 +1,7 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: '/smart-restaurant-management-system/',
-})
+  base: command === 'serve' ? '/' : '/smart-restaurant-management-system/',
+}))
