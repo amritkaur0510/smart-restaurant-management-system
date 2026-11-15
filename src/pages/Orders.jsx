@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ordersData from "../data/OrderData";
 import menuData from "../data/MenuData";
-import { useCart } from "../context/useCart";
+
 import "../styles/Order.css"
+import { useCart } from "../context/useCart";
 
 
 function Orders() {

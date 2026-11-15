@@ -1,8 +1,8 @@
-
+import { useCart } from "../context/useCart";
 import MenuData from "../data/MenuData";
 import "../styles/PopularDishes.css";
 import { Link } from "react-router";
-import { useCart } from "../context/useCart";
+
 
 import paneerImage from "../assets/Grilled Paneer Tikka Platter with Green Chutney.png";
 import burgerImage from "../assets/Classic Cheeseburger PNG Cutout.png";
